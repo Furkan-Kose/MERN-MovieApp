@@ -1,0 +1,102 @@
+.searchContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputContainer {
+    position: relative;
+    width: 300px;
+}
+
+.inputContainer input {
+    padding: 8px 12px;
+    border: none;
+    outline: none;
+    width: 100%;
+    border-radius: 32px;
+}
+
+.inputContainer button {
+    padding: 8px 12px;
+    background-color: #ff4500;
+    border: none;
+    cursor: pointer;
+    border-radius: 32px;
+    font-size: 0.9rem;
+}
+
+.results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    z-index: 999;
+    position: absolute;
+    top: 70px;
+    background-color: #333;
+    width: 360px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 16px;
+    max-height: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* Scroll bar stilleri */
+.results::-webkit-scrollbar {
+    width: 5px;
+}
+
+.results::-webkit-scrollbar-thumb {
+    background-color: #ff4500; /* Scroll bar rengi */
+    border-radius: 4px;
+}
+
+.results::-webkit-scrollbar-track {
+    background-color: #1f1f1f; /* Scroll bar arka plan rengi */
+}
+
+.result {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 300px;
+    padding: 16px 32px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    background-color: #242424;
+}
+
+.result img {
+    width: 30px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.result h3 {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+@media (max-width: 1336px) {
+    .inputContainer {
+        width: 200px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .inputContainer {
+        width: 120px;
+    }
+}
+
+@media (max-width: 738px) {
+    .inputContainer {
+        width: 75px;
+    }
+}

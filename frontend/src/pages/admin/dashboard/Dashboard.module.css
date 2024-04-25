@@ -1,0 +1,51 @@
+.container {
+    margin: 20px;
+  }
+  
+  h1 {
+    font-size: 32px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  
+  table {
+    width: 50%;
+    border-collapse: collapse;
+    background-color:darkslateblue;
+    margin-bottom: 50px;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 16px;
+    text-align: left;
+  }
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    width: 50%;
+  }
+  
+  .links a {
+    text-decoration: none;
+    background-color: darkslateblue;
+    color: white;
+    font-size: 18px;
+    padding: 24px 48px;
+  }
+  
+  .links a:hover {
+    color: #007bff;
+    background-color: rebeccapurple;
+}
+  
+  

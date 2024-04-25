@@ -1,0 +1,94 @@
+.adminCategories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.adminCategories .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #333;
+    width: 100%;
+}
+
+.adminCategories .title {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.adminCategories .top .add {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    background-color: #28a745;
+    color: white;
+}
+
+.adminCategories .movies {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    margin-top: 1rem;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.adminCategories .movies .movie {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    width: 100%;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #333;
+}
+
+.adminCategories .movies .movie .info {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.adminCategories .movies .movie img {
+    width: 60px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.adminCategories .movies .movie h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.adminCategories .movies .movie button {
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin: 0 1rem;
+}
+
+.adminCategories .movies .movie .edit {
+    background-color: #007bff;
+    color: white;
+}
+
+.adminCategories .movies .movie .delete {
+    background-color: #dc3545;
+    color: white;
+}
+
+
+

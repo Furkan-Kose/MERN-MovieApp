@@ -1,0 +1,120 @@
+.container {
+    width: 100%;
+    padding: 32px 0;
+  }
+
+.titleContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid gray;
+}
+  
+.title {
+    font-size: 2rem;
+    font-weight: 500;
+   margin-bottom: 10px;
+}
+
+.titleButton {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ff4500;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.titleButton:hover {
+    background-color: #ff4500cc;
+}
+
+.moviesContainer {
+    position: relative;
+    margin-top: 16px;
+    overflow: hidden;
+}
+  
+.movies {
+    display: flex;
+    gap: 32px;
+    transition: transform 0.5s ease;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none; /* Firefox için */
+    -ms-overflow-style: none; /* Internet Explorer için */
+}
+
+  .movies::-webkit-scrollbar {
+    display: none; /* WebKit tabanlı tarayıcılar için */
+  }
+  
+  .scrollArrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .scrollArrow:hover {
+    background-color: rgba(0, 0, 0, 1);
+  }
+  
+  .scrollLeft {
+    left: 0;
+  }
+  
+  .scrollRight {
+    right: 0;
+  }
+  
+  @media (max-width: 1366px) {
+      .title {
+        font-size: 1.8rem;
+      }
+      .titleButton {
+        font-size: 1rem;
+        padding: 5px 10px;
+      }
+  }
+
+  @media (max-width: 1024px) {
+      .title {
+        font-size: 1.5rem;
+      }
+      .titleButton {
+        font-size: 0.9rem;
+        padding: 5px 8px;
+      }
+  }
+  
+  @media (max-width: 738px) {
+    .title {
+      font-size: 1.8rem;
+    }
+    .titleButton {
+      font-size: 0.9rem;
+      padding: 5px 15px;
+    }
+    .scrollArrow {
+      width: 30px;
+      height: 30px;
+      font-size: 16px;
+    }
+  }
+
+
+  

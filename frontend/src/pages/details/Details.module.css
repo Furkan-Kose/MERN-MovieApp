@@ -1,0 +1,206 @@
+.container {
+    margin: auto;
+    padding: 32px 150px;
+    margin-top: 80px;
+}
+
+.movieContainer {
+    display: flex;
+    gap: 32px;
+}
+
+.movieContainer img {
+    width: 400px;
+}
+
+.movieContent {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 16px 0;
+}
+
+.movieContent h2 {
+    font-size: 2rem;
+}
+
+.movieContent button {
+    width: fit-content;
+    background-color: #ff4500;
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    border-radius: 32px;
+    color: white;
+}
+
+.movieContent div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.comments {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 32px 0;
+}
+
+.comments h2 {
+    font-size: 1.5rem;
+}
+
+.addComment {
+    display: flex;
+    gap: 32px;
+    padding: 16px 32px;
+    background-color: #333;
+    border-radius: 16px;
+    box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.3);
+    margin-top: 16px;
+}
+
+.addComment p {
+    font-size: 1rem;
+    align-self: center;
+}
+
+.addComment textarea {
+    flex: 8;
+    padding: 16px;
+    border-radius: 16px;
+    background-color: #242424;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+.addComment button {
+    flex: 1;
+    width: fit-content;
+    background-color: #ff4500;
+    padding: 0 16px;
+    border: none;
+    outline: none;
+    border-radius: 32px;
+    color: white;
+    font-size: 1rem;
+}
+
+.comment {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 24px 32px;
+    border-radius: 16px;
+    background-color: #333;
+    margin-top: 16px;
+    box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.commentUser {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.commentUser h3 {
+    font-size: 1rem;
+}
+
+.commentUser span {
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+.commentContent {
+    display: flex;
+    gap: 32px;
+    font-size: 0.9rem;
+    opacity: 0.9;
+    margin-top: 8px;
+}
+
+.commentContent p {
+    flex: 8;
+    padding: 16px 32px;
+    border-radius: 16px;
+    background-color: #242424;
+    border: none;
+    outline: none;
+    color: white;
+    margin: 0;
+}
+
+.commentContent button {
+    flex: 1;
+    background-color: #ff4500;
+    padding: 0 16px;
+    border: none;
+    outline: none;
+    border-radius: 32px;
+    color: white;
+    font-size: 1rem;
+}
+
+
+@media (max-width: 1366px) {
+    .container {
+        padding: 32px 120px;
+    }
+    .movieContainer img {
+        width: 350px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 32px 80px;
+    }
+    .movieContainer img {
+        width: 250px;
+    }
+}
+
+@media (max-width: 738px) {
+    .container {
+        padding: 32px 40px;
+    }
+    .movieContainer img {
+        width: 150px;
+    }
+    .addComment {
+        padding: 12px;
+        gap: 16px;
+    }
+    .addComment p {
+        font-size: 0.8rem;
+    }
+    .addComment textarea {
+        padding: 8px;
+    }
+    .addComment button {
+        padding: 0 8px;
+        font-size: 0.8rem;
+    }
+    .comment {
+        padding: 12px;
+    }
+    .commentContent {
+        gap: 16px;
+    }
+    .commentContent p {
+        font-size: 0.8rem;
+        padding: 12px;
+    }
+    .commentContent button {
+        padding: 0 8px;
+        font-size: 0.8rem;
+    }
+}
+
+
+
+
+

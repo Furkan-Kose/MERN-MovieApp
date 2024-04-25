@@ -1,0 +1,130 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.bgImage {
+    background-image:url("https://miro.medium.com/v2/resize:fit:1400/1*5lyavS59mazOFnb55Z6znQ.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1));
+    pointer-events: none;
+}
+
+.contentContainer {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    padding: 0 150px;
+    margin: auto;
+    display: flex;
+}
+
+.content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .content h1 {
+    font-size: 4rem;
+    margin-bottom: 16px;
+    font-weight: 700;
+  }
+  
+  .content p {
+    font-size: 2rem;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+
+.content button {
+    padding: 16px;
+    background-color: #ff4500;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    width: 200px;
+    border-radius: 32px;
+    color: white;
+    margin-top: 32px;
+}
+
+.moviesContainer {
+    padding: 0 150px;
+}
+
+@media (max-width: 1366px) {
+    .contentContainer {
+        padding: 0 120px;
+    }
+    .content h1 {
+        font-size: 3rem;
+    }
+    .content p {
+        font-size: 1.5rem;
+    }
+    .content button {
+        font-size: 1.2rem;
+    }
+    .moviesContainer {
+        padding: 0 120px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .contentContainer {
+        padding: 0 80px;
+    }
+    .content h1 {
+        font-size: 2.5rem;
+    }
+    .content p {
+        font-size: 1.2rem;
+    }
+    .content button {
+        font-size: 1rem;
+        width: 160px;
+    }
+    .moviesContainer {
+        padding: 0 80px;
+    }
+}
+
+@media (max-width: 738px) {
+    .contentContainer {
+        padding: 0 40px;
+    }
+    .content h1 {
+        font-size: 2.2rem;
+    }
+    .content p {
+        font-size: 1.2rem;
+    }
+    .content button {
+        font-size: 1rem;
+        width: 120px;
+    }
+    .moviesContainer {
+        padding: 0 40px;
+    }
+}
+
